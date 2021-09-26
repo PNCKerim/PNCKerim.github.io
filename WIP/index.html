@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="keywords" content="HTML, CSS, JavaScript">
+            <link rel="stylesheet" href="style.css" />
+            <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Nunito&family=Pacifico&display=swap" rel="stylesheet">
+
+            <title>PlutoCoin</title>
+    </head>
+    <body>
+        <CENTER>
+        <header>
+          <h1>PlutoCoin</h1>
+          </header>
+
+        <div class="valuta">
+
+          <h2>Wisselkoers: </h2>
+
+          <input type="number">
+          <select>
+            <option value="currency">Currency</option>
+          </select>
+
+          <input type="number">
+          <select>
+            <option value="currency">Currency</option>
+          </select>
+
+          <script>
+
+            const select = document.querySelectorAll('select');
+            const input = document.querySelectorAll('input');
+            const API_URL = "http://api.exchangeratesapi.io/v1/latest?access_key=87dd94b742bd0afac2ba96d8cd3bce8b";
+            let html = ' ';
+
+            async function currency(){
+              const res = await fetch(API_URL);
+              const data = await res.json();
+              const arrKeys = Object.keys(data.rates);
+              const rates = data.rates;
+              console.log(rates)
+
+              arrKeys.map(Item =>{
+                return html += `<option value=${item}>${item}</option>`;
+              });
+              for(let i=0; i<select.length; i++){
+                select[i].innerHTML = html;
+              };
+
+              function convert(i, j){
+                input[i].value = input[j].value * rates[select[i].value] / rates[select[j].value];
+              }
+
+              input[0].addEventListener('keyup', ()=> convert(1,0));
+              input[1].addEventListener('keyup', ()=> convert(0,1));
+              select[0].addEventListener('change', ()=> convert(1,0));
+              select[1].addEventListener('change', ()=> convert(0,1));
+
+            };
+
+          </script>
+
+        </div>
+    </body>
+</html>
