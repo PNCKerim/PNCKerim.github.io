@@ -1,4 +1,4 @@
-const api = "https://api.exchangeratesapi.io/v1/latest?access_key=87dd94b742bd0afac2ba96d8cd3bce8b";
+const api = "http://api.exchangeratesapi.io/v1/latest?access_key=87dd94b742bd0afac2ba96d8cd3bce8b";
 
 var search = document.querySelector(".searchBox");
 var convert = document.querySelector(".convert");
