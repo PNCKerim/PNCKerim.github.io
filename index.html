@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+
+      <!-- Verbind het CSS bestand met de html pagina. -->
+      <link rel="stylesheet" href="style.css" />
+      
+      <!-- De verschillende lettertypes voor de website. -->
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Nunito&family=Pacifico&display=swap" rel="stylesheet">
+      
+      <!-- Naam van de website -->
+      <title>PlutoCoin</title>
+      <!-- Foto naast de titel -->
+      <link rel="shortcut icon" href="coin.png">
+   </head>
+   <body>
+      
+      <CENTER>
+
+      <header>
+         <!-- Logo & titel van de website-->
+         <h1>PlutoCoin</h1>
+      </header>
+
+      <h2>Wisselkoers: </h2>
+            <div>
+               <label>
+               Vul geldbedrag in :
+               </label>
+
+               <!-- Een zoekbalk waarin je het bedrag invoerd. -->
+               <input type="number"
+                  class="geldhoeveelheid"
+                  value="0">
+                    Van
+                     <select class="van">
+                        <!-- Welk valuta het bedrag is. -->
+                       <option value="">Kies Valuta ...</option>
+                        <option value="USD">USD</option>
+                        <option value="AED">AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="BSD">BSD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CLP">CLP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="COP">COP</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="DOP">DOP</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="FJD">FJD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="GTQ">GTQ</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="KZT">KZT</option>
+                        <option value="MVR">MVR</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PAB">PAB</option>
+                        <option value="PEN">PEN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PKR">PKR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="PYG">PYG</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="SAR">SAR</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="TWD">TWD</option>
+                        <option value="UAH">UAH</option>
+                        <option value="UYU">UYU</option>
+                        <option value="ZAR">ZAR</option>
+                     </select>
+                     naar
+                     <select class="naar">
+                        <!-- Naar welke valuta je het bedrag wilt omrekenen. -->
+                        <option value="">Kies Valuta ...</option>
+                        <option value="USD">USD</option>
+                        <option value="AED">AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="BSD">BSD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CLP">CLP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="COP">COP</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="DOP">DOP</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="FJD">FJD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="GTQ">GTQ</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="KZT">KZT</option>
+                        <option value="MVR">MVR</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PAB">PAB</option>
+                        <option value="PEN">PEN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PKR">PKR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="PYG">PYG</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="SAR">SAR</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="TWD">TWD</option>
+                        <option value="UAH">UAH</option>
+                        <option value="UYU">UYU</option>
+                        <option value="ZAR">ZAR</option>
+                     </select>
+
+               <!-- Wissel button -->
+               <button class="wissel"
+                  type="submit">
+               Wissel 🧮
+               </button>
+
+               <!-- reset button -->
+               <button
+                  onclick="resetKnop()">
+               Reset ⚙️
+               </button>
+
+               <div id="eindbedrag">
+
+               <!-- Laat het omgerekend bedrag zien. -->
+               <h2>Omgerekend bedrag :
+                   <span class="Omgerekend"
+                         style="color:green;">
+              </span>
+            </h2>
+         
+      <!-- Verbind het javascript bestand met de html pagina. -->
+      <script src="script.js"></script>
+
+   </body>
+</html>

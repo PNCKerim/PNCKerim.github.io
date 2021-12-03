@@ -1,0 +1,32 @@
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: #CCE7F1;
+}
+
+header, h1 {
+  font-size: 75px;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Pacifico', cursive;
+}
+
+input {
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+select {
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid black;
+  color: #fff;
+  background-color: #007474;
+  border-radius: 9px;
+}
